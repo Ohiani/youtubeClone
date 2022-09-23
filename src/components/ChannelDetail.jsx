@@ -5,13 +5,15 @@ import { Box } from '@mui/material';
 import {Videos, ChannelCard} from './'
 import { fetchFromAPI } from '../Utilities/fetchFromAPI';
 
+
 const ChannelDetail = ({channelDetail}) => {
+
+
 const [channelDetails, setChannelDetails] = useState(null)
 const [videos, setVideos] = useState([])
 
 const {id} = useParams();
 
-console.log(channelDetails, videos)
 
 useEffect(() => {
 fetchFromAPI(`channels?part=snippet&id=${id}`)

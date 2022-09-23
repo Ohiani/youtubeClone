@@ -28,12 +28,15 @@ const SearchBar = () => {
     sx={{
         borderRadius: 20,
         border: '1px solid #e3e3e3',
+        backgroundColor: '#e3e3e3',
+        color: '#fff',
         pl:3,
         mr: {sm: 5}
     }}>
         <input 
          className='search-bar'
          placeholder='Search...'
+         sx={{color: '#fff'}}
          value={searchTerm}
          onChange = {(e) => setSearchTerm(e.target.value)}/>
 

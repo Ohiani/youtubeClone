@@ -44,6 +44,8 @@ a {
   border:none;
   outline:none;
   width:350px;
+  background-color: #e3e3e3;
+  color: #fff !important;
 }
 
 .category-btn{

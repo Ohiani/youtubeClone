@@ -3,9 +3,12 @@ import { CheckCircle } from '@mui/icons-material';
 import { Box, CardMedia, Typography, CardContent } from '@mui/material';
 import {Link} from 'react-router-dom';
 
-import { demoChannelTitle, demoChannelUrl, demoProfilePicture, demoVideoTitle } from '../Utilities/constants';
+import {  demoProfilePicture } from '../Utilities/constants';
 
 const ChannelCard = ({channelDetails, marginTop}) => {
+
+  console.log(channelDetails)
+
   return (
     <Box 
     sx={{
@@ -14,7 +17,7 @@ const ChannelCard = ({channelDetails, marginTop}) => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',  
-      width: { xs: '365px', md: '320px'},
+      width: { xs: '356px', md: '305px'},
       height: '326px',
       margin: 'auto',
       marginTop,
@@ -28,7 +31,7 @@ const ChannelCard = ({channelDetails, marginTop}) => {
              sx={{borderRadius: '50%', mb: 2, border: '1px solid #e3e3e3', width: '180px', height: '180px'}}
              />
           <Typography variant='h6' color='#fff'>
-            {channelDetails?.snippet?.channelTitle || demoChannelTitle}
+            {channelDetails?.snippet?.title}
             <CheckCircle sx={{color: 'gray', fontSize: 14, ml: '5px'}}/>
           </Typography>
 
