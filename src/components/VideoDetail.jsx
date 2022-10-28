@@ -55,7 +55,7 @@ const VideoDetail = () => {
               </Stack>
 
               <Stack>
-              <Typography variant={{sm:'subtitle2', md:'body1'}} sx={{opacity: '0.7'}}>{parseInt(viewCount).toLocaleString()}  Views</Typography>
+              <Typography variant={{sm:'subtitle2', md:'body1'}} sx={{opacity: '0.7'}}> {parseInt(viewCount).toLocaleString()}  Views</Typography>
               </Stack>
               
              </Stack>

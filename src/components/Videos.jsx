@@ -6,7 +6,7 @@ const Videos = ({videos, direction}) => {
 
   return(
     
-    <Stack direction={direction || 'row'} flexWrap= 'wrap' justifyContent="start" gap={2}>
+    <Stack direction={direction || 'row'} flexWrap= 'wrap' justifyContent="center" gap={1.5}>
         {videos?.map((item, i) => (
             <Box key={i}>
                 {item.id.videoId && <VideoCard video={item} />}

@@ -13,7 +13,8 @@ const NavBar = () => {
     sx={{position:'sticky', background: '#000', top: 0, justifyContent: 'space-between'}}>
 
     <Link to='/' style={{display:'flex', alignItems:'center', }}>
-      <img src={logo} alt="logo" height={45} />
+      <img src={logo} alt="logo" height={45} /> 
+      <h1  style={{sm:{display:'hidden',color: 'white', marginLeft: '6px'}}}>CloneTube</h1>
     </Link>
       
       <SearchBar/>

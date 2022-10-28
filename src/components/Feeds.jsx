@@ -36,8 +36,9 @@ fetchFromAPI(`search?part=snippet&q=${SelectedCategory}`)
         }}>
           {SelectedCategory} <span style={{color:'#f31503',}}>Videos</span>
         </Typography>
-
+        <Box sx={{margin: 'auto'}}>
         <Videos videos={videos}/>
+        </Box>
       </Box>
     </Stack>
   )
