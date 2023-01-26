@@ -13,6 +13,7 @@ import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
 export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
+export const image = 'https://webneel.com/daily/sites/default/files/images/daily/08-2018/4-3d-cartoon-tribal-woman-vincent.jpg';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },

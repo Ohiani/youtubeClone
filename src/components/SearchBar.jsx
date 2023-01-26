@@ -14,11 +14,10 @@ const SearchBar = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSearchTerm('');
 
     if(searchTerm){
       navigate(`/search/${searchTerm}`);
-
-      
     }
   }
   return (
@@ -26,21 +25,24 @@ const SearchBar = () => {
     component='form'
     onSubmit = {handleSubmit} 
     sx={{
-        borderRadius: 20,
-        border: '1px solid #e3e3e3',
-        backgroundColor: '#e3e3e3',
+        borderRadius: 2,
+        border: '0px solid #e3e3e3',
+        backgroundColor: 'black',
         color: '#fff',
-        pl:3,
-        mr: {sm: 5}
+        display: 'flex',
+        justifyContent: 'space-around',
+        padding: '5px',
+
+        width:{xs: '12rem', md: 'auto'},
     }}>
         <input 
          className='search-bar'
          placeholder='Search...'
-         sx={{color: '#fff'}}
+         sx={{color: '#fff', paddingLeft:'10px'}}
          value={searchTerm}
          onChange = {(e) => setSearchTerm(e.target.value)}/>
 
-         <IconButton type='submit' sx={{p: '10px', color: 'red'}}>
+         <IconButton type='submit' sx={{p: '5px', color: '#e3e3e3'}}>
             <Search/>
          </IconButton>
     </Paper>

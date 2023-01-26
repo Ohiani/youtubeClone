@@ -32,7 +32,7 @@ fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`)
             <ChannelCard channelDetails={channelDetails}  marginTop='-125px'/>
          
       <Box display='flex' p='2'>
-        <Box sx={{mr:{sm: '100px'}}}/>
+        <Box sx={{mr:{sm: '0px'}}}/>
           <Videos videos={videos}/>
        
       </Box>

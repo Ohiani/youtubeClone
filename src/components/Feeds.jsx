@@ -19,13 +19,13 @@ fetchFromAPI(`search?part=snippet&q=${SelectedCategory}`)
     <Stack 
     sx={{flexDirection: {sm: 'column', md: 'row',} }}>
       
-      <Box sx={{height: {sx: 'auto', md: '88vh'}, borderRight:'1px solid #3d3d3d', px: {sm: 0, md:2} }}>
+      <Box sx={{height: {sx: 'auto', md: '89vh'}, borderRight:'1px solid #3d3d3d', px: {sm: 0, md:2} }}>
         
         
         <SideBar SelectedCategory={SelectedCategory} setSelectedCategory={setSelectedCategory}/>
         
         
-        <Typography variant='body2' className='copyright' sx={{mt:1.5, color: '#fff'}}>
+        <Typography variant='body2' className='copyright' sx={{mt:1.5, color: '#fff', ml: 0.5}}>
           Copyright 2022 @Lucky Frank
         </Typography>
       </Box>

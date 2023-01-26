@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #fff;
+  background-color: black;
 }
 
 a {
@@ -17,7 +18,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(114, 113, 113);
+  background-color: rgb(170, 60, 60);
   border-radius: 10px;
   height: 200px;
 }
@@ -43,9 +44,11 @@ a {
 .search-bar{
   border:none;
   outline:none;
-  width:350px;
-  background-color: #e3e3e3;
+  width: 450px;
+  padding-left: 10px;
+  background-color: transparent;
   color: #fff !important;
+
 }
 
 .category-btn{

@@ -7,7 +7,7 @@ import {  demoProfilePicture } from '../Utilities/constants';
 
 const ChannelCard = ({channelDetails, marginTop}) => {
 
-  console.log(channelDetails)
+  console.log(channelDetails?.snippet?.thumbnails?.high?.url)
 
   return (
     <Box 
@@ -26,6 +26,7 @@ const ChannelCard = ({channelDetails, marginTop}) => {
         <Link to={`/channel/${channelDetails?.id?.channelId}`}>
           <CardContent sx={{display: 'flex', flexDirection:'column', justifyContent:'center', textAlign: 'center', color: '#fff' }}>
              <CardMedia 
+             height= '180px'
              image={channelDetails?.snippet?.thumbnails?.high?.url || demoProfilePicture}
              alt={channelDetails?.snippet?.title}
              sx={{borderRadius: '50%', mb: 2, border: '1px solid #e3e3e3', width: '180px', height: '180px'}}

@@ -1,8 +1,9 @@
-import { Stack } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import {Link} from 'react-router-dom';
 
-import {logo} from '../Utilities/constants'
+import {image, logo} from '../Utilities/constants'
 import SearchBar from "./SearchBar";
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 
 
 const NavBar = () => {
@@ -14,10 +15,12 @@ const NavBar = () => {
 
     <Link to='/' style={{display:'flex', alignItems:'center', }}>
       <img src={logo} alt="logo" height={45} /> 
-      <h1  style={{sm:{display:'hidden',color: 'white', marginLeft: '6px'}}}>CloneTube</h1>
+      <Typography fontSize={{md: '24px', xs: '13px'}} sx={{color: '#fff', marginLeft: '10px', fontWeight: 'bold'}}>Stream Online videos</Typography>
     </Link>
       
       <SearchBar/>
+      <Box display={{ xs: 'none', sm: 'block' }} sx={{justifyContent: 'center' , alignItems: 'center', cursor: 'pointer'}}>
+      </Box>
     </Stack>
   )
 }
